@@ -4,7 +4,7 @@
     "email": "aartiles@gmail.com"
   },
   "name": "mbsy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Ambassador API wrapper for Node.js.",
   "homepage": "https://github.com/socialbro/mbsy",
   "keywords": [
