@@ -25,6 +25,17 @@ module.exports.createClient = function(api_username, api_key, options) {
 				if (!params || !params.campaign_uid) return cb('Required params missing: campaign_uid');
 				if (!params || !params.email) return cb('Required params missing: email');
 				mbsy._doRequest(mbsy._generateNiceUrl(params, 'event/record'), cb);
+			},
+			/**
+			 * Records an instance of a campaign referral event.
+			 * @param  {Object} params as described on https://getambassador.com/#v2_method_event_record
+			 * @param  {Function} cb The callback function with the results
+			 * @return {void}
+			 */		
+			multi_record: function(params, cb) {
+				if (!params || !params.campaign_uid) return cb('Required params missing: campaign_uid');
+				if (!params || !params.email) return cb('Required params missing: email');
+				mbsy._doRequest(mbsy._generateNiceUrl(params, 'event/multi_record'), cb);
 			}
 		},
 		Ambassador: {
